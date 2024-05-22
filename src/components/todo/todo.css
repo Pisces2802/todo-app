@@ -1,0 +1,27 @@
+.todo-wrapper {
+    margin-bottom: 5rem;
+}
+
+.todo-list {
+    list-style-type: none;
+    color: #fff;
+}
+
+.todo-list-container {
+    padding: 1rem;
+    width: min(500px, 90%);
+    margin-inline: auto;
+    margin-top: 1rem;
+    border: 2px solid limegreen;
+    box-sizing: border-box;
+}
+
+.todo-list-container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.del-icon{
+    font-size: 2rem;
+}

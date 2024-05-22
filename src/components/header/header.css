@@ -1,8 +1,8 @@
 .header-section {
-    width: min(500px, 90%);
+    width: min(500px, 90%);  
     margin-inline: auto;
     margin-top: 4rem;
-    border: 2px solid orangered;
+    border: 2px solid limegreen;
 }
 
 .header-container {
@@ -13,8 +13,8 @@
     /* border: 2px solid white; */
 }
 
-.header-container > h2 {
-    font-size: 2rem;
+.header-container > .heading {
+    font-size: clamp(1.5rem,  2.5vw, 3.5rem);
 }
 
 .header-container > p {

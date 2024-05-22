@@ -1,12 +1,13 @@
 import React from 'react'
 import "./header.css"
 
-export default function Header() {
+export default function Header(props) {
+  const {completed, total} = props
   return (
     <section className='header-section'>
       <div className='header-container'>
-        <h2>Tasks Done</h2>
-        <p>2/3</p>
+        <h2 className='heading'>Tasks Done</h2>
+        <p>{completed}/{total}</p>
       </div>
     </section>
   )

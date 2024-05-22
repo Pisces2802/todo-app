@@ -8,7 +8,7 @@ export default function InputForm() {
       <form action="" className='form'>
         <label htmlFor="text"></label>
         
-        <div>
+        <div className='input-container'>
         <input type="text" id="text" class="input" placeholder="enter yout task"/>
         <IoIosAddCircleOutline className='icon'/>
         </div>
