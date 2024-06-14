@@ -2,33 +2,32 @@ import { useState } from 'react';
 import Heading from '../heading/Heading';
 import Header from '../header/Header';
 import InputForm from '../inputform/InputForm';
-import TodoList from './todolist/TodoList';
+import TodoList from '../todolist/TodoList';
+import data from '../../data/data';
 import './App.css';
 
 
 function App() {
 
-  const [todos, setTodos] = useState([
-    {title: "Play 9ja bet 😁", 
-    id: 1, 
-    isCompleted: false},
-  
-  {title: "Go to the gym ⛹️‍♂️⛹️‍♂️", 
-    id: 2,
-    isCompleted: false},
-  
-  {title: "write some code 🧑‍💻", 
-    id: 3,
-    isCompleted: false}])
+  const [todos, setTodos] = useState(data)
 
+  const completedTodos = 
+      todos.filter((todo) => {
+       return todo.isCompleted === true 
+      }).length
+
+
+
+
+const totalTodos = todos.length
 
   return (
 
     <div className='app'>
       <Heading />
-      <Header completed={4} total={8} />
-      <InputForm />
-      <TodoList todos={todos} />
+      <Header completed={completedTodos} total={totalTodos} />
+      <InputForm  setTodos={setTodos}/>
+      <TodoList todos={todos} setTodos={setTodos}/>
     </div>
 
   );

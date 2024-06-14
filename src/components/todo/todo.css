@@ -1,6 +1,13 @@
-.todo-wrapper {
-    margin-bottom: 5rem;
+.todo-list-wrapper{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
 }
+
+
+
+
 
 .todo-list {
     color: #fff;
@@ -18,8 +25,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .del-icon{
     font-size: 2rem;
+}
+ 
+.btn-icon {
+    font-size: 1.5rem;
 }
